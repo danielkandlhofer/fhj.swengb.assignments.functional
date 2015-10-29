@@ -18,6 +18,12 @@ class FunctionalAssignmentTest {
    * (either val, var or def) which returns a collection containing
    * 100 elements.
    */
+
+  //eigener Test
+  @Test def sumXs() : Unit = {
+    assertEquals(assignment0.xs,500500)
+  }
+
   @Test def provideCollectionWith1000Elements(): Unit = {
     assertEquals(upperBound - lowerBound + 1, assignment0.xs.size)
   }
