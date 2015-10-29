@@ -1,4 +1,4 @@
-package fhj.swengb.assignments.functional.rladstaetter
+package fhj.swengb.assignments.functional.dkandlhofer
 
 /**
   * This is the first assignment for swengb 2015.
@@ -19,12 +19,12 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     * xs(i) + factor == xs(i + 1) (for i > 0 and i <= 1000)
     *
     */
-  val xs: Seq[Int] = ???
+  val xs: Seq[Int] = for (i <- Seq.range(lowerBound, upperBound + 1)) yield i
 
   /**
     * provide the sum of all elements defined in xs
     */
-  val sumXs = ???
+  val sumXs = xs.foldLeft(0)(_+_)
 
   /**
     * This sequence contains a list with the following elements:
