@@ -21,7 +21,7 @@ class FunctionalAssignmentTest {
 
   //eigener Test
   @Test def sumXs() : Unit = {
-    assertEquals(assignment0.xs,500500)
+    assertEquals(assignment0.sumXs,500500)
   }
 
   @Test def provideCollectionWith1000Elements(): Unit = {
