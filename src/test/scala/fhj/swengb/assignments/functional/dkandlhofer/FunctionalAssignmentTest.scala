@@ -41,7 +41,7 @@ class FunctionalAssignmentTest {
   @Test def greaterEqual0(): Unit = {
     assertTrue(assignment0.xs.forall(_ >= lowerBound))
   }
-/*
+
   /**
    * Test shows that ys is implemented correctly
    */
@@ -64,5 +64,5 @@ class FunctionalAssignmentTest {
     assertTrue(assignment0.result.forall(_ == factor))
   }
 
-*/
+
 }

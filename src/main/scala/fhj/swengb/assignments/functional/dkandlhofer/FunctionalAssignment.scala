@@ -39,23 +39,23 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     * x(999) = lowerbound
     *
     */
-  val ys: Seq[Int] = ???
-/*
+  val ys: Seq[Int] = xs.reverse.map(_*factor)
+
   /**
     * this sequence contains pairs of xs and ys. the ys should
     * be in reversed order.
     */
-  val zs: Seq[(Int, Int)] = ???
+  val zs: Seq[(Int, Int)] = xs zip ys.reverse
 
   /**
     * Function should divide the second operand with the first.
     */
-  def f(ab: (Int, Int)): Int = ???
+  def f(ab: (Int, Int)): Int = ab._2 / ab._1
 
   /**
     * apply function f defined above to all elements of zs, return the sequence
     */
-  val result: Seq[Int] = ???
-*/
+  val result: Seq[Int] = for (i <- zs) yield f(i)
+
 }
 
