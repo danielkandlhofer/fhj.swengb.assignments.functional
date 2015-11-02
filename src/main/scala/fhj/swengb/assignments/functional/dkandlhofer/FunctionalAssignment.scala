@@ -55,7 +55,7 @@ case class FunctionalAssignment(lowerBound: Int = 1,
   /**
     * apply function f defined above to all elements of zs, return the sequence
     */
-  val result: Seq[Int] = for (i <- zs) yield f(i)
+  val result: Seq[Int] = zs.map(f(_))
 
 }
 
