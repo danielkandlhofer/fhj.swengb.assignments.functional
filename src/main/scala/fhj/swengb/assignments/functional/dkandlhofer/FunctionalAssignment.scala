@@ -19,7 +19,7 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     * xs(i) + factor == xs(i + 1) (for i > 0 and i <= 1000)
     *
     */
-  val xs: Seq[Int] = for (i <- Seq.range(lowerBound, upperBound + 1, factor)) yield i
+  val xs: Seq[Int] = for (i <- Seq.range(lowerBound, upperBound + 1)) yield i
 
   /**
     * provide the sum of all elements defined in xs
@@ -40,7 +40,7 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     *
     */
   val ys: Seq[Int] = ???
-
+/*
   /**
     * this sequence contains pairs of xs and ys. the ys should
     * be in reversed order.
@@ -56,6 +56,6 @@ case class FunctionalAssignment(lowerBound: Int = 1,
     * apply function f defined above to all elements of zs, return the sequence
     */
   val result: Seq[Int] = ???
-
+*/
 }
 

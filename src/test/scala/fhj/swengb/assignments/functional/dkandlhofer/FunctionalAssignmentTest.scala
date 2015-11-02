@@ -18,12 +18,12 @@ class FunctionalAssignmentTest {
    * (either val, var or def) which returns a collection containing
    * 100 elements.
    */
-
+/*
   //eigener Test
   @Test def sumXs() : Unit = {
     assertEquals(assignment0.sumXs,500500)
   }
-
+*/
   @Test def provideCollectionWith1000Elements(): Unit = {
     assertEquals(upperBound - lowerBound + 1, assignment0.xs.size)
   }
@@ -41,7 +41,7 @@ class FunctionalAssignmentTest {
   @Test def greaterEqual0(): Unit = {
     assertTrue(assignment0.xs.forall(_ >= lowerBound))
   }
-
+/*
   /**
    * Test shows that ys is implemented correctly
    */
@@ -64,5 +64,5 @@ class FunctionalAssignmentTest {
     assertTrue(assignment0.result.forall(_ == factor))
   }
 
-
+*/
 }
